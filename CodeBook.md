@@ -1,5 +1,5 @@
 DATA DICTIONARY - tidydata_grouby_who_activity and average all extracted features
-           H .Housing Record or Group Quarters Unit
+           
 who   
     type and length: integer(2)
     meaning : the code of the volunteers who perform the experiment
