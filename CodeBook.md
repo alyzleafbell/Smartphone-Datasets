@@ -4,6 +4,7 @@ who
     type and length: integer(2)
     meaning : the code of the volunteers who perform the experiment
     values: 1..30
+    
 activity
     type and lenth: string
     meaning: human activity
