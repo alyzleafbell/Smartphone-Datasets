@@ -5,6 +5,7 @@ Smartphone-Datasets getting and cleaning
 2. install packages dplyr and tidyr and load packages; 
 3. execute the run_analysis.R scrpt;
 4. data merging and cleaning processes:
+
 ## Task 1 : Merges the training and the test sets to create one data set.
    First read data from test dir into vectors; The vector read from "test/X_test.txt" need special transformation because there are 561 feature statistical fields in one column.Use the function separate() in package dplyr to transform feature vector into data.frame with 561 columns. Create a test dataset of class data.frame using vectors and dataframe.Create train dataset in a same way. Finally rbind  the two dataset.
 
