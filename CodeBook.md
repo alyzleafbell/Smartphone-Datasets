@@ -1,60 +1,47 @@
-DATA DICTIONARY - tidydata_grouby_who_activity and average all extracted features
+DATA DICTIONARY - tidy_avg_features.txt
+
+This text file contains the data grouby who(the volunteers) and activity(walking/sitting...), 
+and average all extracted features. The specifications of each field are as the followings:
            
-who   
+[1] who   
     type and length: integer(2)
     meaning : the code of the volunteers who perform the experiment
     values: 1..30
     
-activity
+[2] activity
     type and lenth: string
     meaning: human activity
     values: one of the six followings("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS" "SITTING","STANDING", "LAYING") 
 
- 1_tBodyAcc_mean()_X
+[3] tBodyAcc_mean_X
     type and lenth: dbl
     meaning: average of the tBodyAcc_mean feature of a certain volunteer's certain activity 
     values: [-1,1]
  
- The following fields all have similar code description with the " 1_tBodyAcc_mean()_X",except that each field has a 
- unique statistical feature related to its field name, so only list the names here:
- 2_tBodyAcc_mean()_Y                
- 3_tBodyAcc_mean()_Z                 
- 4_tBodyAcc_std()_X                 
- [7] "5_tBodyAcc_std()_Y"                  "6_tBodyAcc_std()_Z"                 
- [9] "41_tGravityAcc_mean()_X"             "42_tGravityAcc_mean()_Y"            
-[11] "43_tGravityAcc_mean()_Z"             "44_tGravityAcc_std()_X"             
-[13] "45_tGravityAcc_std()_Y"              "46_tGravityAcc_std()_Z"             
-[15] "81_tBodyAccJerk_mean()_X"            "82_tBodyAccJerk_mean()_Y"           
-[17] "83_tBodyAccJerk_mean()_Z"            "84_tBodyAccJerk_std()_X"            
-[19] "85_tBodyAccJerk_std()_Y"             "86_tBodyAccJerk_std()_Z"            
-[21] "121_tBodyGyro_mean()_X"              "122_tBodyGyro_mean()_Y"             
-[23] "123_tBodyGyro_mean()_Z"              "124_tBodyGyro_std()_X"              
-[25] "125_tBodyGyro_std()_Y"               "126_tBodyGyro_std()_Z"              
-[27] "161_tBodyGyroJerk_mean()_X"          "162_tBodyGyroJerk_mean()_Y"         
-[29] "163_tBodyGyroJerk_mean()_Z"          "164_tBodyGyroJerk_std()_X"          
-[31] "165_tBodyGyroJerk_std()_Y"           "166_tBodyGyroJerk_std()_Z"          
-[33] "201_tBodyAccMag_mean()"              "202_tBodyAccMag_std()"              
-[35] "214_tGravityAccMag_mean()"           "215_tGravityAccMag_std()"           
-[37] "227_tBodyAccJerkMag_mean()"          "228_tBodyAccJerkMag_std()"          
-[39] "240_tBodyGyroMag_mean()"             "241_tBodyGyroMag_std()"             
-[41] "253_tBodyGyroJerkMag_mean()"         "254_tBodyGyroJerkMag_std()"         
-[43] "266_fBodyAcc_mean()_X"               "267_fBodyAcc_mean()_Y"              
-[45] "268_fBodyAcc_mean()_Z"               "269_fBodyAcc_std()_X"               
-[47] "270_fBodyAcc_std()_Y"                "271_fBodyAcc_std()_Z"               
-[49] "294_fBodyAcc_meanFreq()_X"           "295_fBodyAcc_meanFreq()_Y"          
-[51] "296_fBodyAcc_meanFreq()_Z"           "345_fBodyAccJerk_mean()_X"          
-[53] "346_fBodyAccJerk_mean()_Y"           "347_fBodyAccJerk_mean()_Z"          
-[55] "348_fBodyAccJerk_std()_X"            "349_fBodyAccJerk_std()_Y"           
-[57] "350_fBodyAccJerk_std()_Z"            "373_fBodyAccJerk_meanFreq()_X"      
-[59] "374_fBodyAccJerk_meanFreq()_Y"       "375_fBodyAccJerk_meanFreq()_Z"      
-[61] "424_fBodyGyro_mean()_X"              "425_fBodyGyro_mean()_Y"             
-[63] "426_fBodyGyro_mean()_Z"              "427_fBodyGyro_std()_X"              
-[65] "428_fBodyGyro_std()_Y"               "429_fBodyGyro_std()_Z"              
-[67] "452_fBodyGyro_meanFreq()_X"          "453_fBodyGyro_meanFreq()_Y"         
-[69] "454_fBodyGyro_meanFreq()_Z"          "503_fBodyAccMag_mean()"             
-[71] "504_fBodyAccMag_std()"               "513_fBodyAccMag_meanFreq()"         
-[73] "516_fBodyBodyAccJerkMag_mean()"      "517_fBodyBodyAccJerkMag_std()"      
-[75] "526_fBodyBodyAccJerkMag_meanFreq()"  "529_fBodyBodyGyroMag_mean()"        
-[77] "530_fBodyBodyGyroMag_std()"          "539_fBodyBodyGyroMag_meanFreq()"    
-[79] "542_fBodyBodyGyroJerkMag_mean()"     "543_fBodyBodyGyroJerkMag_std()"     
-[81] "552_fBodyBodyGyroJerkMag_meanFreq()"
+ There are other 65 extracted features in this text file,   all have similar code description with the above field
+ "tBodyAcc_mean_X",except that each field has a unique statistical feature related to its field name.
+
+ These fields are :
+
+ [4] "tBodyAcc_mean_Y"           "tBodyAcc_mean_Z"           "tBodyAcc_std_X"           
+ [7] "tBodyAcc_std_Y"            "tBodyAcc_std_Z"            "tGravityAcc_mean_X"       
+[10] "tGravityAcc_mean_Y"        "tGravityAcc_mean_Z"        "tGravityAcc_std_X"        
+[13] "tGravityAcc_std_Y"         "tGravityAcc_std_Z"         "tBodyAccJerk_mean_X"      
+[16] "tBodyAccJerk_mean_Y"       "tBodyAccJerk_mean_Z"       "tBodyAccJerk_std_X"       
+[19] "tBodyAccJerk_std_Y"        "tBodyAccJerk_std_Z"        "tBodyGyro_mean_X"         
+[22] "tBodyGyro_mean_Y"          "tBodyGyro_mean_Z"          "tBodyGyro_std_X"          
+[25] "tBodyGyro_std_Y"           "tBodyGyro_std_Z"           "tBodyGyroJerk_mean_X"     
+[28] "tBodyGyroJerk_mean_Y"      "tBodyGyroJerk_mean_Z"      "tBodyGyroJerk_std_X"      
+[31] "tBodyGyroJerk_std_Y"       "tBodyGyroJerk_std_Z"       "tBodyAccMag_mean"         
+[34] "tBodyAccMag_std"           "tGravityAccMag_mean"       "tGravityAccMag_std"       
+[37] "tBodyAccJerkMag_mean"      "tBodyAccJerkMag_std"       "tBodyGyroMag_mean"        
+[40] "tBodyGyroMag_std"          "tBodyGyroJerkMag_mean"     "tBodyGyroJerkMag_std"     
+[43] "fBodyAcc_mean_X"           "fBodyAcc_mean_Y"           "fBodyAcc_mean_Z"          
+[46] "fBodyAcc_std_X"            "fBodyAcc_std_Y"            "fBodyAcc_std_Z"           
+[49] "fBodyAccJerk_mean_X"       "fBodyAccJerk_mean_Y"       "fBodyAccJerk_mean_Z"      
+[52] "fBodyAccJerk_std_X"        "fBodyAccJerk_std_Y"        "fBodyAccJerk_std_Z"       
+[55] "fBodyGyro_mean_X"          "fBodyGyro_mean_Y"          "fBodyGyro_mean_Z"         
+[58] "fBodyGyro_std_X"           "fBodyGyro_std_Y"           "fBodyGyro_std_Z"          
+[61] "fBodyAccMag_mean"          "fBodyAccMag_std"           "fBodyBodyAccJerkMag_mean" 
+[64] "fBodyBodyAccJerkMag_std"   "fBodyBodyGyroMag_mean"     "fBodyBodyGyroMag_std"     
+[67] "fBodyBodyGyroJerkMag_mean" "fBodyBodyGyroJerkMag_std" 
