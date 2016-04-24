@@ -10,6 +10,8 @@
 
 datadir <- "/Users/alyz/Documents/coursera/R/UCI HAR Dataset" ## download data unzip dir
 setwd(datadir)
+library(dplyr)
+library(tidyr)
 
 ## Task 1 start here:
 ## Merges the training and the test sets to create one data set.
@@ -46,9 +48,9 @@ dataset_m <- rbind(dataset_test,dataset_train)
 
 ## Task 2 start here:
 ## Extracts only the measurements on the mean and standard deviation for each measurement.
-ff_txt <- readLines("features.txt") ## read all descriptions of features from text
-extract_idx <- grep("-mean()|-std()",ff_txt) ## get required fields
-extract_names <- paste("feature",e,sep='.')
+ff_txt <- read.table("features.txt")[,2] ## read all descriptions of features from text
+extract_idx <- grep("-mean\\(\\)|-std\\(\\)",ff_txt) ## get required fields
+extract_names <- paste("feature",extract_idx,sep='.')
 extract_dset <- dataset_m[,c("who","activity",extract_names,"source","rowno")]
 
 ## Task 3 starts here:
@@ -59,8 +61,8 @@ desc_dset <- mutate(extract_dset,activity=activity_names[activity])
 
 ## Task 4 starts here:
 ## Appropriately labels the data set with descriptive variable names.
-feature_names <- gsub(' ','_',ff_txt[extract_idx])
-feature_names <- gsub('-','_',desp_names)
+feature_names <- gsub('\\(\\)','',ff_txt[extract_idx])
+feature_names <- gsub('-','_',feature_names)
 names(desc_dset)[3:(length(names(desc_dset))-2)] <- feature_names
 tidy_dset <- desc_dset
 
