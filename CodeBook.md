@@ -65,8 +65,8 @@ and average all extracted features. The specifications of each field are as the 
     type and lenth: dbl
     meaning: average of the tBodyAcc_mean feature of a certain volunteer's certain activity 
     values: [-1,1]
- 
- There are other 65 extracted features in this text file,   all have similar code description with the above field
+
+  There are other 65 extracted features in this text file,   all have similar code description with the above field
  "tBodyAcc_mean_X",except that each field has a unique statistical feature related to its field name.
 
  These fields are :
