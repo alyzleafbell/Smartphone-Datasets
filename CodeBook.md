@@ -53,17 +53,25 @@ and average all extracted features. The specifications of each field are as the 
            
 [1] who   
     type and length: integer(2)
+    
     meaning : the code of the volunteers who perform the experiment
+    
     values: 1..30
     
 [2] activity
+
     type and lenth: string
+    
     meaning: human activity
+    
     values: one of the six followings("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS" "SITTING","STANDING", "LAYING") 
 
 [3] tBodyAcc_mean_X
+
     type and lenth: dbl
+    
     meaning: average of the tBodyAcc_mean feature of a certain volunteer's certain activity 
+    
     values: [-1,1]
 
   There are other 65 extracted features in this text file,   all have similar code description with the above field
