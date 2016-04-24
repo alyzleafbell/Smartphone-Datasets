@@ -72,3 +72,5 @@ tidy_dset <- desc_dset
 dset <- select(desc_dset,-rowno,-source) ## could not avg these 2 columns
 dset <-group_by(dset,who,activity)
 avg_dset <-summarise_each(dset,funs(mean))
+write.table(avg_dset,file = "tidy_avg_features.txt",row.name=FALSE)
+
